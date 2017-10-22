@@ -12,5 +12,8 @@
     "url": "https://izukltd.visualstudio.com/_git/NotifyMe"
   },
   "author": "Mehdi and Sakina",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "walmart": "0.0.4"
+  }
 }

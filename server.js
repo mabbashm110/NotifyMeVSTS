@@ -1,0 +1,1 @@
+var walmart = require('walmart')(key);
