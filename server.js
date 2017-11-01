@@ -3,16 +3,18 @@ var tempKeys = require("./tempKeys")
 var walmart = require('walmart')(tempKeys.walmartKeys);
 
 //Express
-var express = require('express')
-var exphbs  = require('express-handlebars');
+var express = require('express'), 
+    config = require('./config/app'), 
+    app = express(),
+    exphbs  = require('express-handlebars'),
+    Fitbit = require('fitbit');
 
-var app = express()
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
  
 app.get('/', function (req, res) {
     //getItem(Item number on Walmart)
-    walmart.getItem(173622323).then(function(item) {
+    walmart.getItem(45075624).then(function(item) {
         //console.log(item.product.primaryImageUrl);
         var imgAssets = item.product.imageAssets;
         for (var i = 0; i < imgAssets.length; i++){
