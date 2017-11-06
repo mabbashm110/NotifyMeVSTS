@@ -17,6 +17,7 @@
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "fitbit": "0.0.7",
+    "tesco": "^0.1.5",
     "walmart": "0.0.4"
   }
 }
